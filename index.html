@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Used Cars</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Used Cars</h1>
+    </header>
+
+    <main>
+      <section class="product-list">
+        <div id="search-bar">
+          <h2>Filter Cars by Year, Color, Make, and Max Price</h2>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search car by color, year"
+          />
+          <input type="number" id="max-price" placeholder="Max. Price" />
+          <button id="search">Search</button>
+        </div>
+
+        <div id="buttons">
+          <button class="button-value" onclick="productFilter('All')">
+            All
+          </button>
+          <button class="button-value" onclick="productFilter('Toyota')">
+            Toyota
+          </button>
+          <button class="button-value" onclick="productFilter('Honda')">
+            Honda
+          </button>
+          <button class="button-value" onclick="productFilter('Ford')">
+            Ford
+          </button>
+          <button class="button-value" onclick="productFilter('Nissan')">
+            Nissan
+          </button>
+          <button class="button-value" onclick="productFilter('Mazda')">
+            Mazda
+          </button>
+          <button class="button-value" onclick="productFilter('Subaru')">
+            Subaru
+          </button>
+          <button class="button-value" onclick="productFilter('Chevrolet')">
+            Chevrolet
+          </button>
+        </div>
+
+        <div id="products"></div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
